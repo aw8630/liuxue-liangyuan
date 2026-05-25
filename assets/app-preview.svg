@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1440" viewBox="0 0 720 1440" role="img" aria-labelledby="title desc">
+  <title id="title">留学良缘 App 登录页示意图</title>
+  <desc id="desc">展示青藤之恋品牌、手机号一键登录、微信登录入口和协议勾选区域的移动端登录页示意图。</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#86a5c7"/>
+      <stop offset="0.52" stop-color="#b8cde0"/>
+      <stop offset="1" stop-color="#406d4f"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".06"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#102a22" flood-opacity=".22"/>
+    </filter>
+  </defs>
+  <rect width="720" height="1440" fill="url(#sky)"/>
+  <circle cx="104" cy="102" r="86" fill="#fff" opacity=".12"/>
+  <circle cx="642" cy="158" r="118" fill="#fff" opacity=".09"/>
+  <path d="M0 880 C128 812 234 866 354 822 C506 766 612 816 720 754 L720 1440 L0 1440 Z" fill="#2d6b4c" opacity=".72"/>
+  <path d="M0 950 C136 892 278 934 396 888 C536 834 624 866 720 824 L720 1440 L0 1440 Z" fill="#24563f" opacity=".9"/>
+  <g opacity=".48">
+    <path d="M136 790 C186 640 224 620 268 792" stroke="#f7fbff" stroke-width="38" stroke-linecap="round" fill="none"/>
+    <path d="M500 780 C552 622 584 620 624 780" stroke="#f7fbff" stroke-width="42" stroke-linecap="round" fill="none"/>
+    <path d="M286 594 C344 548 410 548 466 594" stroke="#f7fbff" stroke-width="24" stroke-linecap="round" fill="none"/>
+    <circle cx="236" cy="558" r="44" fill="#f7fbff"/>
+    <circle cx="504" cy="558" r="44" fill="#f7fbff"/>
+  </g>
+  <rect width="720" height="1440" fill="#0f172a" opacity=".16"/>
+
+  <g transform="translate(160 230)">
+    <rect x="0" y="0" width="88" height="88" rx="22" fill="#fff"/>
+    <path d="M26 53 C34 29 56 28 69 39 C60 43 51 51 46 66 C39 60 33 56 26 53Z" fill="#6f89a8"/>
+    <path d="M22 42 C42 44 58 53 65 70 C48 69 33 61 22 42Z" fill="#6f89a8"/>
+  </g>
+  <text x="276" y="292" fill="#fff" font-size="58" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">青藤之恋</text>
+  <text x="186" y="378" fill="#fff" font-size="34" font-family="KaiTi, STKaiti, serif" opacity=".95">高学历实名制的恋爱平台</text>
+
+  <g filter="url(#shadow)">
+    <rect x="102" y="782" width="516" height="132" rx="34" fill="#214f3d"/>
+    <rect x="102" y="782" width="516" height="132" rx="34" fill="url(#glass)"/>
+    <text x="360" y="838" text-anchor="middle" fill="#fff" font-size="42" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">本机号码</text>
+    <text x="360" y="884" text-anchor="middle" fill="#dbeee7" font-size="26" font-family="PingFang SC, Microsoft YaHei, sans-serif">运营商认证后自动获取</text>
+  </g>
+
+  <rect x="116" y="936" width="488" height="88" rx="44" fill="#5aa184"/>
+  <text x="360" y="993" text-anchor="middle" fill="#fff" font-size="31" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">一键登录</text>
+  <text x="360" y="1088" text-anchor="middle" fill="#fff" font-size="28" font-family="PingFang SC, Microsoft YaHei, sans-serif" opacity=".92">其他手机号登录</text>
+
+  <g transform="translate(96 1150)">
+    <circle cx="18" cy="18" r="16" fill="none" stroke="#fff" stroke-width="3" opacity=".82"/>
+    <text x="54" y="27" fill="#eef8f4" font-size="23" font-family="PingFang SC, Microsoft YaHei, sans-serif">已阅读并同意《用户协议》和《隐私政策》</text>
+  </g>
+
+  <g transform="translate(238 1262)">
+    <circle cx="44" cy="44" r="40" fill="none" stroke="#fff" stroke-width="3"/>
+    <text x="44" y="58" text-anchor="middle" fill="#fff" font-size="42" font-family="Arial, sans-serif"></text>
+  </g>
+  <g transform="translate(402 1262)">
+    <circle cx="44" cy="44" r="40" fill="none" stroke="#fff" stroke-width="3"/>
+    <circle cx="34" cy="41" r="18" fill="#fff"/>
+    <circle cx="55" cy="48" r="15" fill="#fff"/>
+    <circle cx="28" cy="37" r="2.4" fill="#4f8068"/>
+    <circle cx="39" cy="37" r="2.4" fill="#4f8068"/>
+    <circle cx="50" cy="45" r="2.2" fill="#4f8068"/>
+    <circle cx="59" cy="45" r="2.2" fill="#4f8068"/>
+  </g>
+  <rect x="232" y="1370" width="256" height="8" rx="4" fill="#fff" opacity=".88"/>
+</svg>
