@@ -6,77 +6,13 @@
   <meta name="description" content="留学良缘是一款面向留学生、海归及海外华人用户的认真交友与恋爱匹配应用。" />
   <title>留学良缘 - 认真交友与恋爱匹配应用</title>
   <style>
-    :root { --green:#1f7a4d; --green-dark:#15543b; --ink:#1f2933; --muted:#667085; --line:#e4e7ec; --paper:#fff; --page:#f6f8f7; }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--page); color: var(--ink); line-height: 1.7; }
-    a { color: inherit; text-decoration: none; }
-    .site-header { position: sticky; top: 0; z-index: 10; border-bottom: 1px solid rgba(228,231,236,.9); background: rgba(255,255,255,.92); backdrop-filter: blur(14px); }
-    .nav { max-width: 1160px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; color: var(--green-dark); white-space: nowrap; }
-    .brand-mark { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; color: #fff; background: var(--green); font-size: 18px; line-height: 1; }
-    .nav-links { display: flex; align-items: center; gap: 22px; color: #475467; font-size: 14px; }
-    .hero { background: linear-gradient(135deg, rgba(31,122,77,.12), rgba(53,92,125,.10)), radial-gradient(circle at 75% 20%, rgba(159,122,50,.14), transparent 28%); border-bottom: 1px solid var(--line); }
-    .hero-inner { max-width: 1160px; margin: 0 auto; padding: 72px 24px 64px; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(300px, .9fr); gap: 48px; align-items: center; }
-    .eyebrow { margin: 0 0 14px; color: var(--green-dark); font-size: 14px; font-weight: 700; letter-spacing: 0; }
-    h1, h2, h3, p { margin-top: 0; }
-    h1 { margin-bottom: 18px; font-size: clamp(36px, 6vw, 64px); line-height: 1.1; letter-spacing: 0; color: #173f32; }
-    .hero-copy { max-width: 700px; margin-bottom: 28px; color: #344054; font-size: 18px; }
-    .badges { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
-    .badge { border: 1px solid rgba(31,122,77,.2); border-radius: 999px; padding: 8px 13px; color: var(--green-dark); background: rgba(255,255,255,.74); font-size: 14px; font-weight: 650; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
-    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 8px; padding: 10px 18px; font-weight: 700; border: 1px solid transparent; }
-    .button.primary { color: #fff; background: var(--green); }
-    .button.secondary { color: var(--green-dark); border-color: rgba(31,122,77,.28); background: rgba(255,255,255,.72); }
-    .phone-frame { width: min(360px, 100%); margin-left: auto; border-radius: 34px; padding: 10px; background: #111827; box-shadow: 0 24px 80px rgba(15,23,42,.22); }
-    .phone-frame img { display: block; width: 100%; aspect-ratio: 473 / 1024; object-fit: cover; border-radius: 26px; }
-    .section { max-width: 1160px; margin: 0 auto; padding: 64px 24px; }
-    .section-title { max-width: 760px; margin-bottom: 28px; }
-    h2 { margin-bottom: 10px; font-size: 30px; line-height: 1.25; letter-spacing: 0; color: #182230; }
-    .section-title p { color: var(--muted); font-size: 16px; }
-    .grid { display: grid; gap: 18px; }
-    .grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .card { min-height: 100%; border: 1px solid var(--line); border-radius: 8px; padding: 24px; background: var(--paper); }
-    .card h3 { margin-bottom: 8px; font-size: 19px; color: #1d2939; }
-    .card p, .card li { color: #52606d; }
-    .card ul, .legal-list { margin: 0; padding-left: 20px; }
-    .product-band { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-    .steps { counter-reset: step; }
-    .step { position: relative; padding-left: 54px; }
-    .step::before { counter-increment: step; content: counter(step); position: absolute; left: 0; top: 4px; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; color: #fff; background: var(--green); font-weight: 800; }
-    .info-table { overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
-    .info-row { display: grid; grid-template-columns: 180px minmax(0, 1fr); border-bottom: 1px solid var(--line); }
-    .info-row:last-child { border-bottom: 0; }
-    .info-label, .info-value { padding: 16px 18px; }
-    .info-label { color: #475467; background: #f8faf9; font-weight: 700; }
-    .info-value { color: #344054; }
-    .legal { background: #fff; border-top: 1px solid var(--line); }
-    .legal-block { margin-top: 22px; padding-top: 22px; border-top: 1px solid var(--line); }
-    .legal-block:first-of-type { margin-top: 0; padding-top: 0; border-top: 0; }
-    .legal-block h3 { margin-bottom: 10px; font-size: 20px; }
-    .site-footer { border-top: 1px solid var(--line); background: #101828; color: #d0d5dd; }
-    .footer-inner { max-width: 1160px; margin: 0 auto; padding: 28px 24px; display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; font-size: 14px; }
-    @media (max-width: 860px) { .nav { align-items: flex-start; flex-direction: column; } .nav-links { width: 100%; overflow-x: auto; padding-bottom: 4px; } .hero-inner { grid-template-columns: 1fr; padding-top: 48px; } .phone-frame { margin: 0 auto; } .grid.three, .grid.two { grid-template-columns: 1fr; } .info-row { grid-template-columns: 1fr; } }
+    :root{--green:#1f7a4d;--green-dark:#15543b;--ink:#1f2933;--muted:#667085;--line:#e4e7ec;--page:#f6f8f7}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--page);color:var(--ink);line-height:1.7}a{color:inherit;text-decoration:none}.site-header{position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line);background:rgba(255,255,255,.94);backdrop-filter:blur(14px)}.nav{max-width:1160px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--green-dark);white-space:nowrap}.brand-mark{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;color:#fff;background:var(--green);font-size:18px}.nav-links{display:flex;align-items:center;gap:22px;color:#475467;font-size:14px}.hero{background:linear-gradient(135deg,rgba(31,122,77,.12),rgba(53,92,125,.1));border-bottom:1px solid var(--line)}.hero-inner{max-width:1160px;margin:0 auto;padding:72px 24px 64px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);gap:48px;align-items:center}.eyebrow{margin:0 0 14px;color:var(--green-dark);font-size:14px;font-weight:700}h1,h2,h3,p{margin-top:0}h1{margin-bottom:18px;font-size:clamp(36px,6vw,64px);line-height:1.1;color:#173f32}.hero-copy{max-width:700px;margin-bottom:28px;color:#344054;font-size:18px}.badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}.badge{border:1px solid rgba(31,122,77,.2);border-radius:999px;padding:8px 13px;color:var(--green-dark);background:rgba(255,255,255,.74);font-size:14px;font-weight:650}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;border-radius:8px;padding:10px 18px;font-weight:700;border:1px solid transparent}.primary{color:#fff;background:var(--green)}.secondary{color:var(--green-dark);border-color:rgba(31,122,77,.28);background:rgba(255,255,255,.72)}.phone-frame{width:min(360px,100%);margin-left:auto;border-radius:34px;padding:10px;background:#111827;box-shadow:0 24px 80px rgba(15,23,42,.22)}.phone-frame img{display:block;width:100%;aspect-ratio:852/1846;object-fit:cover;border-radius:26px}.section{max-width:1160px;margin:0 auto;padding:64px 24px}.section-title{max-width:760px;margin-bottom:28px}h2{margin-bottom:10px;font-size:30px;line-height:1.25;color:#182230}.section-title p{color:var(--muted);font-size:16px}.grid{display:grid;gap:18px}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.card{min-height:100%;border:1px solid var(--line);border-radius:8px;padding:24px;background:#fff}.card h3{margin-bottom:8px;font-size:19px;color:#1d2939}.card p,.card li{color:#52606d}.card ul,.legal-list{margin:0;padding-left:20px}.product-band,.legal{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.steps{counter-reset:step}.step{position:relative;padding-left:54px}.step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:4px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;color:#fff;background:var(--green);font-weight:800}.legal-block{margin-top:22px;padding-top:22px;border-top:1px solid var(--line)}.legal-block:first-of-type{margin-top:0;padding-top:0;border-top:0}.info-table{overflow:hidden;border:1px solid var(--line);border-radius:8px;background:#fff}.info-row{display:grid;grid-template-columns:180px minmax(0,1fr);border-bottom:1px solid var(--line)}.info-row:last-child{border-bottom:0}.info-label,.info-value{padding:16px 18px}.info-label{color:#475467;background:#f8faf9;font-weight:700}.info-value{color:#344054}.site-footer{border-top:1px solid var(--line);background:#101828;color:#d0d5dd}.footer-inner{max-width:1160px;margin:0 auto;padding:28px 24px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:14px}@media(max-width:860px){.nav{align-items:flex-start;flex-direction:column}.nav-links{width:100%;overflow-x:auto;padding-bottom:4px}.hero-inner{grid-template-columns:1fr;padding-top:48px}.phone-frame{margin:0 auto}.three,.two{grid-template-columns:1fr}.info-row{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav" aria-label="主导航">
-      <a class="brand" href="#home"><span class="brand-mark">留</span><span>留学良缘</span></a>
-      <div class="nav-links">
-        <a href="#product">产品介绍</a><a href="#features">主要功能</a><a href="#login">注册登录</a><a href="#agreements">用户协议</a><a href="#contact">联系我们</a>
-      </div>
-    </nav>
-  </header>
+  <header class="site-header"><nav class="nav" aria-label="主导航"><a class="brand" href="#home"><span class="brand-mark">留</span><span>留学良缘</span></a><div class="nav-links"><a href="#product">产品介绍</a><a href="#features">主要功能</a><a href="#login">注册登录</a><a href="#agreements">用户协议</a><a href="#contact">联系我们</a></div></nav></header>
   <main id="home">
-    <section class="hero"><div class="hero-inner"><div>
-      <p class="eyebrow">微信开放平台登记应用：留学良缘</p>
-      <h1>留学良缘</h1>
-      <p class="hero-copy">留学良缘是一款面向留学生、海归及海外华人用户的认真交友与恋爱匹配应用。产品以真实资料、学历背景、兴趣偏好和沟通互动为核心，帮助用户在安全、清晰的环境中认识合适的人。</p>
-      <div class="badges" aria-label="产品特点"><span class="badge">留学生与海归用户</span><span class="badge">真实资料展示</span><span class="badge">微信授权登录</span><span class="badge">恋爱匹配</span></div>
-      <div class="hero-actions"><a class="button primary" href="#product">查看产品介绍</a><a class="button secondary" href="#agreements">查看用户协议</a></div>
-    </div><figure class="phone-frame" aria-label="留学良缘 App 登录页展示"><img src="assets/app-preview.svg" alt="留学良缘 App 登录页，展示一键登录、手机号登录和微信登录入口" /></figure></div></section>
+    <section class="hero"><div class="hero-inner"><div><p class="eyebrow">微信开放平台登记应用：留学良缘</p><h1>留学良缘</h1><p class="hero-copy">留学良缘是一款面向留学生、海归及海外华人用户的认真交友与恋爱匹配应用。产品以真实资料、学历背景、兴趣偏好和沟通互动为核心，帮助用户在安全、清晰的环境中认识合适的人。</p><div class="badges" aria-label="产品特点"><span class="badge">留学生与海归用户</span><span class="badge">真实资料展示</span><span class="badge">微信授权登录</span><span class="badge">恋爱匹配</span></div><div class="hero-actions"><a class="button primary" href="#product">查看产品介绍</a><a class="button secondary" href="#agreements">查看用户协议</a></div></div><figure class="phone-frame" aria-label="留学良缘 App 登录页展示"><img src="assets/%E7%95%99%E5%AD%A6%E8%89%AF%E7%BC%98.png" alt="留学良缘 App 登录页，展示一键登录、手机号登录和微信登录入口" /></figure></div></section>
     <section id="product" class="section"><div class="section-title"><h2>产品介绍</h2><p>留学良缘聚焦留学、海归和海外华人群体的认真交友需求，提供从注册登录、资料完善、背景展示、偏好设置到互动沟通的完整移动端服务。</p></div><div class="grid three"><article class="card"><h3>应用定位</h3><p>面向有真实恋爱与婚恋意向的用户，强调资料完整度、学历与经历展示、关系目标表达和沟通效率。</p></article><article class="card"><h3>适用用户</h3><p>主要服务留学生、海归及海外华人，也适用于关注学历、城市、职业、价值观和生活方式匹配的用户。</p></article><article class="card"><h3>服务方式</h3><p>用户可通过手机号或微信授权完成注册/登录，在 App 内完善资料、设置偏好、浏览推荐并进行互动。</p></article></div></section>
     <section id="features" class="product-band"><div class="section"><div class="section-title"><h2>主要功能</h2><p>应用围绕真实资料、偏好匹配和安全互动设计基础功能。</p></div><div class="grid three"><article class="card"><h3>注册与登录</h3><ul><li>手机号一键登录</li><li>其他手机号登录</li><li>微信授权登录/注册</li></ul></article><article class="card"><h3>个人资料展示</h3><ul><li>头像、昵称、年龄、城市</li><li>学历、学校、职业经历</li><li>兴趣、性格与生活方式标签</li></ul></article><article class="card"><h3>匹配与互动</h3><ul><li>择偶偏好设置</li><li>兴趣与背景匹配</li><li>站内互动沟通</li></ul></article></div></div></section>
     <section id="login" class="section"><div class="section-title"><h2>微信注册/登录流程</h2><p>留学良缘支持用户通过微信授权完成账号创建和登录，用户需先阅读并同意用户协议和隐私政策。</p></div><div class="grid two steps"><article class="card step"><h3>用户发起授权</h3><p>用户在 App 首页点击微信图标或微信登录入口后，系统会跳转微信授权页，请求用户确认授权。</p></article><article class="card step"><h3>创建或登录账号</h3><p>授权成功后，应用根据微信返回的授权结果完成注册或登录，并引导用户继续完善个人资料。</p></article></div></section>
