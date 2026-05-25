@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="1440" viewBox="0 0 720 1440" role="img" aria-labelledby="title desc">
   <title id="title">留学良缘 App 登录页示意图</title>
-  <desc id="desc">展示青藤之恋品牌、手机号一键登录、微信登录入口和协议勾选区域的移动端登录页示意图。</desc>
+  <desc id="desc">展示留学良缘品牌、手机号一键登录、微信登录入口和协议勾选区域的移动端登录页示意图。</desc>
   <defs>
     <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
       <stop offset="0" stop-color="#86a5c7"/>
@@ -28,31 +28,26 @@
     <circle cx="504" cy="558" r="44" fill="#f7fbff"/>
   </g>
   <rect width="720" height="1440" fill="#0f172a" opacity=".16"/>
-
   <g transform="translate(160 230)">
     <rect x="0" y="0" width="88" height="88" rx="22" fill="#fff"/>
     <path d="M26 53 C34 29 56 28 69 39 C60 43 51 51 46 66 C39 60 33 56 26 53Z" fill="#6f89a8"/>
     <path d="M22 42 C42 44 58 53 65 70 C48 69 33 61 22 42Z" fill="#6f89a8"/>
   </g>
-  <text x="276" y="292" fill="#fff" font-size="58" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">青藤之恋</text>
-  <text x="186" y="378" fill="#fff" font-size="34" font-family="KaiTi, STKaiti, serif" opacity=".95">高学历实名制的恋爱平台</text>
-
+  <text x="276" y="292" fill="#fff" font-size="58" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">留学良缘</text>
+  <text x="186" y="378" fill="#fff" font-size="34" font-family="KaiTi, STKaiti, serif" opacity=".95">留学生专属交友平台</text>
   <g filter="url(#shadow)">
     <rect x="102" y="782" width="516" height="132" rx="34" fill="#214f3d"/>
     <rect x="102" y="782" width="516" height="132" rx="34" fill="url(#glass)"/>
     <text x="360" y="838" text-anchor="middle" fill="#fff" font-size="42" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">本机号码</text>
     <text x="360" y="884" text-anchor="middle" fill="#dbeee7" font-size="26" font-family="PingFang SC, Microsoft YaHei, sans-serif">运营商认证后自动获取</text>
   </g>
-
   <rect x="116" y="936" width="488" height="88" rx="44" fill="#5aa184"/>
   <text x="360" y="993" text-anchor="middle" fill="#fff" font-size="31" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">一键登录</text>
   <text x="360" y="1088" text-anchor="middle" fill="#fff" font-size="28" font-family="PingFang SC, Microsoft YaHei, sans-serif" opacity=".92">其他手机号登录</text>
-
   <g transform="translate(96 1150)">
     <circle cx="18" cy="18" r="16" fill="none" stroke="#fff" stroke-width="3" opacity=".82"/>
     <text x="54" y="27" fill="#eef8f4" font-size="23" font-family="PingFang SC, Microsoft YaHei, sans-serif">已阅读并同意《用户协议》和《隐私政策》</text>
   </g>
-
   <g transform="translate(238 1262)">
     <circle cx="44" cy="44" r="40" fill="none" stroke="#fff" stroke-width="3"/>
     <text x="44" y="58" text-anchor="middle" fill="#fff" font-size="42" font-family="Arial, sans-serif"></text>
